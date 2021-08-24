@@ -1,61 +1,68 @@
 @charset "UTF-8";
 
-:root{
-    
+:root {
 }
 
-body{
-    font-family:'Roboto', sans-serif;
-    text-align: center;
-    height: 100%;
-    
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.form-container{
-    background-color: coral;
-    width: 500px;
-    margin: 150px auto;
-    padding-bottom: 20px;
-    z-index: 5;
-    position:relative;
+.total-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 30px 0;
+  position: relative;
 }
 
-.total-container{
-    position:relative;
-    height: 100%;
-    width: 100%;
+.total-container::before {
+  content: "";
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
 }
 
-.total-container:before{
-content:"";
-background-color: blue;
-background-size: cover;
-position: absolute;
-top: 0px;
-right: 0px;
-bottom: 0px;
-left: 0px;
-opacity: 0.6;
+.form-container {
+  background-color: burlywood;
+  width: 600px;
+  padding: 20px 0;
+  position: relative;
 }
 
-
-#title{
-    color:white;
-    padding-top:10px ;
-
+#title {
+  color: black;
+  padding-top: 10px;
+  position: relative;
 }
 
-#description{
-    color: white;
-    font-style: italic;
+#description {
+  color: black;
+  font-style: italic;
+  position: relative;
 }
 
-#name{
-    border-radius: 25px;
+#name {
+  border-radius: 25px;
 }
 
-#input-name{
-    border-radius: 25px;
-    width: 70%;
-    height: 30px;
+#input-name {
+  border-radius: 25px;
+  width: 70%;
+  height: 30px;
 }
