@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -29,7 +29,7 @@
           <div id="e-mail">
             <label id="email-label" for="email-label"> E-mail</label>
             <p>
-              <input type="email" placeholder="Enter your Email" required />
+              <input id="input-email" type="email" placeholder="Enter your Email" required />
               <i data-feather="mail"></i>
             </p>
           </div>
@@ -37,7 +37,7 @@
           <div id="number">
             <label id="number-label" for="number-age"> Age </label>
             <p>
-              <input type="number" placeholder="Age" min="18" max="100" required />
+              <input id="input-age" type="number" placeholder="Age" min="18" max="100" required />
               <i data-feather="user-minus"></i>
             </p>
           </div>
@@ -47,7 +47,7 @@
               >Which option best describes your current role?</label
             >
             <p>
-              <select name="which option best describes your current role?">
+              <select id="select-dropdown" name="which option best describes your current role?">
                 <option value="student">Student</option>
                 <option value="full time job">Full time job</option>
                 <option value="prefer not to say">Prefer not to say</option>
@@ -81,7 +81,7 @@
               >What is your favorite feature of freeCodeCamp?</label
             >
             <p>
-              <select name="What is your favorite feature of freeCodeCamp?">
+              <select id="favorite-feature"  name="What is your favorite feature of freeCodeCamp?">
                 <option value="challenges">Challenges</option>
                 <option value="projects">Projects</option>
                 <option value="community">Community</option>
@@ -95,25 +95,25 @@
             >
 
             <p>
-              <input type="checkbox" name="Front-end Projects" id="Front-end Projects" />
+              <input type="checkbox" name="Front-end Projects" id="Front-end Projects" value="Front-end Projects" />
               <label for="Front-end Projects">Front-end Projects</label>
             </p>
 
             <p>
-              <input type="checkbox" name="Back-end Projects" id="Back-end Projects" />
+              <input type="checkbox" name="Back-end Projects" id="Back-end Projects" value="Back-end Projects"/>
               <label for="Back-end Projects">Back-end Projects</label>
             </p>
 
             <p>
-              <input type="checkbox" name="Additional Courses" id="Additional Courses" />
+              <input type="checkbox" name="Additional Courses" id="Additional Courses" value="Additional Courses" />
               <label for="Additional Courses">Additional Courses</label>
             </p>
           </div>
 
           <div>
-            <label for="textarea">Any comments or suggestions?</label>
+            <label id="textarea" for="textarea">Any comments or suggestions?</label>
             <p>
-              <input
+              <input id="comment"
                 type="textarea"
                 placeholder="Enter your comment here"
                 name="comments or suggestions"
@@ -123,7 +123,7 @@
           </div>
 
           <div>
-            <input type="submit" value="Sing in" />
+            <input id="sing-in"type="submit" value="Sing in" />
           </div>
 
           <script>

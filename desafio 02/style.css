@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 :root {
+  --font-color: black;
+  --background-color:blueviolet;
+  --form-container:rgb(202, 143, 202);
 }
 
 body,
@@ -17,7 +20,7 @@ html {
 }
 
 .total-container {
-  height: 100%;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,40 +32,107 @@ html {
 
 .total-container::before {
   content: "";
-  background-color: blue;
+  background-color:var(--background-color);
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   opacity: 0.2;
+  height: 100%;
 }
 
 .form-container {
-  background-color: burlywood;
+  background-color: var(--form-container);
   width: 600px;
   padding: 20px 0;
   position: relative;
+  font-style: ;
 }
 
 #title {
-  color: black;
+  color:var(--font-color);
   padding-top: 10px;
   position: relative;
 }
 
 #description {
-  color: black;
+  color: var(--font-color);
   font-style: italic;
   position: relative;
-}
-
-#name {
-  border-radius: 25px;
 }
 
 #input-name {
   border-radius: 25px;
   width: 70%;
   height: 30px;
+}
+
+#name-label{
+  font-family:"Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#input-email{
+   border-radius: 25px;
+   width: 70%;
+   height: 30px;  
+}
+
+#email-label{
+  font-family:"Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#input-age{
+  border-radius: 25px;
+   width: 40%;
+  height: 30px;
+}
+
+#number-label{
+  font-family:"Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#select-dropdown{
+  border-radius: 25px;
+  width:50%;
+  height: 30px;
+}
+#label-dropdown{
+  font-family:"Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#label-radio-buttons{
+  font-family:"Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#label-checkboxes{
+  font-family:"Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#favorite-feature{
+  border-radius: 25px;
+  width:50% ;
+  height: 30px;
+}
+
+#comment{
+  width: 70%;
+  height: 50px;
+}
+
+#textarea{
+  font-family:"Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#sing-in{
+  border-radius: 25px;
+  font-family:"Roboto", sans-serif;
+  font-weight: bold;
 }
